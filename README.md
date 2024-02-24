@@ -1,4 +1,4 @@
-# RiverBluffsCrawler
+# River Bluff Crawler
 ## How to use:
 1. [Download Firefox](https://www.mozilla.org/en-US/firefox/new/)
 2. Download `crawler.exe` from this repo
