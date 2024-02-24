@@ -18,8 +18,9 @@ try:
     # navigate to home page
     driver.get('https://www.riverblufflandscaping.com/')
 
-except:
+except Exception as e:
     print("\nFAILED TO INITIALIZE WEBDRIVER\n")
+    print(e)
     sys.exit()
 
 print("Crawl started...\n")
@@ -50,4 +51,5 @@ except:
 driver.close()
 print("Using IP:\n")
 print(os.system('ipconfig'))
+print(os.system('ifconfig'))
 print("\nCrawl successful.\n")
