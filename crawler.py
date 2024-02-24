@@ -22,6 +22,8 @@ except:
     print("\nFAILED TO INITIALIZE WEBDRIVER\n")
     sys.exit()
 
+print("Crawl started...\n")
+
 try:
     # click to blog
     to_blog = WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.LINK_TEXT, "Blog")))
@@ -31,6 +33,8 @@ except:
     print("\nFAILED TO CLICK BLOG LINK ON HOME PAGE\n")
     driver.close()
     sys.exit()
+
+print("Locating blog post...\n")
 
 try:
     # click to latest blog post
@@ -44,6 +48,6 @@ except:
 
 # close driver
 driver.close()
-print("Crawl successful.\n")
 print("Using IP:\n")
 print(os.system('ipconfig'))
+print("\nCrawl successful.\n")
